@@ -22,7 +22,10 @@ app.use(cors({
   origin: process.env.NODE_ENV === 'production'
     ? ['https://clinquant-semifreddo-7fd01c.netlify.app/']
     : ['http://localhost:3000', 'http://localhost:8080'],
-  credentials: true
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  optionsSuccessStatus: 200
 }));
 // app.use(morgan('combined')); // Logging disabled
 app.use(express.json({ limit: '10mb' })); // Parse JSON bodies
