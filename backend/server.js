@@ -20,7 +20,7 @@ connectDB();
 app.use(helmet()); // Security headers
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
-    ? ['https://clinquant-maamoul-9bcfc6.netlify.app/']
+    ? ['https://clinquant-semifreddo-7fd01c.netlify.app/']
     : ['http://localhost:3000', 'http://localhost:8080'],
   credentials: true
 }));
