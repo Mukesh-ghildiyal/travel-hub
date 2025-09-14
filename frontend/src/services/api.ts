@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Destination, Hotel, ApiResponse } from '@/types';
 
 // Configure your Express.js backend URL here
-const API_BASE_URL = "https://travel-hub-2.onrender.com/";
+const API_BASE_URL = "https://travel-hub-2.onrender.com/api/";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
